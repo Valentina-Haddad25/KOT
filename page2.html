@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Manuscript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 120px;
+            background-color: #000;
+            color: #fff;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .carousel-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .source-entry {
+            min-width: 100%;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .source-img {
+            width: 160px;
+            height: auto;
+            object-fit: cover;
+            border: 1px solid #fff;
+        }
+
+        .source-text h3 {
+            font-size: 1.5rem;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .source-text h3::first-letter {
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 2rem;
+        }
+
+        .source-text p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .carousel-btn {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0.25rem 1rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        .carousel-btn:first-of-type {
+            left: 20px;
+        }
+
+        .carousel-btn:last-of-type {
+            right: 20px;
+        }
+
+        .quotes-link {
+            display: block;
+            margin: 2rem auto 0 auto;
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            border: 2px solid #fff;
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .quotes-link:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="#sources" class="active">Sources</a></li>
+        <li><a href="page3.html">Quotes</a></li>
+        <li><a href="page4.html">Game</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section id="sources">
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+
+                <div class="source-entry">
+                    <img src="../img/Screenshot_29-4-2025_213955_www.google.com.jpeg" alt="The King of Tars" class="source-img" />
+                    <div class="source-text">
+                        <h3>The King of Tars</h3>
+                        <p> A Middle English romance about a Christian princess who marries a Muslim sultan, gives birth to a formless child, and witnesses miraculous bodily transformations tied to religious conversion.</p>
+                        <p> The text literalizes identity categories, like race and faith, through physical transformation, making them visible, unstable, and performative.</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="source-entry">
+                    <img src="../img/Screenshot_29-4-2025_214043_www.google.com.jpeg" alt="Judith Butler" class="source-img" />
+                    <div class="source-text">
+                        <h3>Judith Butler – “Performative Acts and Gender Constitution”</h3>
+                        <p>In this foundational queer theory essay, Judith Butler redefines gender as something performed rather than inherently possessed. She argues that identity is constituted through repeated actions shaped by social norms. This essay is essential to my analysis of <em>The King of Tars</em>, where identity is unstable, visual, and reactive to power. I use Butler to show how the Princess performs compliance as a survival strategy, masking resistance under the appearance of obedience. Her theory helps me argue that the Princess is not passively shaped by patriarchal forces, but actively manipulating identity in ways that challenge essentialist views of gender, faith, and agency.</p>
+                    </div>
+                </div>
+
+                <div class="source-entry">
+                    <img src="../img/Screenshot%202025-04-29%20214139.png" alt="Queer Temporalities" class="source-img" />
+                    <div class="source-text">
+                        <h3>Dinshaw et al. – “Theorizing Queer Temporalities”</h3>
+                        <p>This roundtable assembles queer theorists like Carolyn Dinshaw and Lee Edelman to rethink time outside of linear, reproductive, or nationalist models. They propose alternative ideas like temporal multiplicity and the “expanded now,” which resist moral or narrative progress. I use this to analyze the Princess’s trajectory in <em>The King of Tars</em>, a path that doesn’t follow a conventional redemption arc but instead resists closure and resolution.</p>
+                    </div>
+                </div>
+
+                <div class="source-entry">
+                    <img src="../img/Screenshot%202025-04-29%20220425.png" alt="Whitaker article" class="source-img" />
+                    <div class="source-text">
+                        <h3>Whitaker – “Black Metaphors in the King of Tars”</h3>
+                        <p>Whitaker interprets the Sultan’s racial transformation not as a straightforward Christianizing of blackness, but as part of a complex spiritual and metaphorical framework. He shows how the text uses visual metaphors, like the Princess’s dream of black hounds, to teach conversion through shock and ambiguity. I use his work to support my reading of <em>Tars</em> as a text that challenges racial binaries. His analysis helps me argue that transformation is destabilizing, making race feel fluid and performative.</p>
+                    </div>
+                </div>
+
+                <div class="source-entry">
+                    <img src="../img/Screenshot%202025-04-29%20220448.png" alt="White Before Whiteness" class="source-img" />
+                    <div class="source-text">
+                        <h3>Kao – <i>White Before Whiteness</i></h3>
+                        <p>Kao explores how whiteness operated symbolically in medieval literature before the rise of modern racial categories. His analysis of <em>The King of Tars</em> highlights how the Sultan’s whitening is less about race and more about affect, belief, and spiritual performance. He positions whiteness as unstable and often contradictory. I use Kao to strengthen my argument that <em>Tars</em> doesn’t affirm racial identity but rather it complicates it. </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn" onclick="moveSlide(-1)">&lt;</button>
+            <button class="carousel-btn" onclick="moveSlide(1)">&gt;</button>
+        </div>
+
+    </section>
+</div>
+
+<script>
+    let index = 0;
+    function moveSlide(direction) {
+        const carousel = document.getElementById('carousel');
+        const total = carousel.children.length;
+        index = (index + direction + total) % total;
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+</script>
+</body>
+</html>

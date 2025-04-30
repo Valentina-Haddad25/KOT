@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Manuscript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 120px;
+            background-color: #000;
+            color: #fff;
+            font-family: 'EB Garamond', serif;
+        }
+        .game-banner {
+            display: block;
+            margin: 0 auto 2rem auto;
+            max-width: 800px;
+            width: 100%;
+            border: 2px solid #fff;
+        }
+        .game-container {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #111;
+            border: 2px solid #fff;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .game-button {
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 1.2rem;
+            margin: 1rem;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+        }
+        .game-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .result-text {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="page2.html">Sources</a></li>
+        <li><a href="page3.html">Quotes</a></li>
+        <li><a href="page4.html" class="active">Game</a></li>
+    </ul>
+</nav>
+
+<img src="../img/Cantigas_de_Santa_Maria.jpg" alt="Medieval Musicians" class="game-banner">
+
+<div class="game-container">
+    <h2>✨ Test Your Transformation ✨</h2>
+    <p>You are a formless figure. Choose your actions to reveal who you might become.</p>
+
+    <button class="game-button" onclick="choose('faith')">Convert to Faith</button>
+    <button class="game-button" onclick="choose('resist')">Resist the Empire</button>
+    <button class="game-button" onclick="choose('perform')">Perform Identity</button>
+
+    <p id="result" class="result-text"></p>
+</div>
+
+<script>
+    function choose(action) {
+        const result = document.getElementById('result');
+        if (action === 'faith') {
+            result.innerText = "You are bathed in light, your skin turns white, but you question what has truly changed.";
+        } else if (action === 'resist') {
+            result.innerText = "You reject all roles. You remain formless.";
+        } else if (action === 'perform') {
+            result.innerText = "You adopt a shape, not your own, but one that lets you survive. Is this identity or disguise?";
+        }
+    }
+</script>
+</body>
+</html>

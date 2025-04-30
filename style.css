@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.subtitle::first-letter {
+    font-size: 3rem;
+    color: #d4af37;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.title {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: flicker 3s infinite;
+
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.71), 0 0 20px rgba(255, 215, 0, 0.45), 0 0 30px rgba(255, 165, 0, 0.51);
+
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+.divider {
+    width: 60%;
+    border: none;
+    border-top: 2px solid #fff;
+    margin: 1.5rem auto;
+    opacity: 0.3;
+}
+.continue-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.continue-btn:hover {
+    color: #d4af37;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.71), 0 0 20px rgba(255, 215, 0, 0.45), 0 0 30px rgba(255, 165, 0, 0.51);
+
+}
+
+@keyframes flicker {
+    0%   { opacity: 1; }
+    5%   { opacity: 0.8; }
+    10%  { opacity: 1; }
+    15%  { opacity: 0.9; }
+    25%  { opacity: 0.6; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0.95; }
+    50%  { opacity: 0.85; }
+    60%  { opacity: 1; }
+    70%  { opacity: 0.75; }
+    80%  { opacity: 0.9; }
+    90%  { opacity: 1; }
+    100% { opacity: 0.95; }
+}
+
+
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+    z-index: 999;
+
+    font-family: 'UnifrakturCook', cursive;
+}
+/* Make body and html full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar at top, fixed */
+
+
+/* Prevent navbar from being pushed around */
+body {
+    padding-top: 80px; /* Space for navbar height */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 3rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ffd700;
+}
+
+.navbar a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffd700;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
